@@ -1,20 +1,9 @@
-/**
- *
- * * main style and common  style for the application
- */
-import styled, { ThemeProps } from "styled-components";
+
 import { createGlobalStyle } from "styled-components";
-/**
- * color theme from coolor.co
- * for the whole application
- */
-export const DevideMinSize = {
-  mobile: "480px",
-  tablet: "600px",
-  tableteLS: "768px",
-  laptop: "992px",
-  screen: "1832x",
-};
+
+export const MOBILE  = 700;
+export const DESKTOP  = 1000;
+
 
 export const colorsInit= {
   dark: "#03045e",
@@ -22,6 +11,8 @@ export const colorsInit= {
   medium: "#00b4d8",
   lessLight: "90e0ef",
   light: "#caf0f8",
+  black: "#000000",
+  white: "#FFFFFF",
 };
 
 
@@ -32,6 +23,8 @@ export const colorsDark = {
   medium:colorsInit.medium ,
   lessFG: colorsInit.lessLight ,
   forground: colorsInit.light ,
+  black: colorsInit.white ,
+  white: colorsInit.black ,
 }
 
 export const colorsLight = {
@@ -41,45 +34,20 @@ export const colorsLight = {
   medium:colorsInit.medium ,
   lessFG: colorsInit.lessDark ,
   forground: colorsInit.dark ,
+  black: colorsInit.black ,
+  white: colorsInit.white ,
 }
 
+export function setColor(darkMode : boolean){
 
-export const AppTheme ={
-  colors: {...colorsLight },
-  // colors: {...colorsDark },
-  font: {
-    regular: "Gloria Hallelujah, cursive",
-    extra: "Poppins, sans-serif",
-    Logo: "Lobster, cursive",
-    fontSize: "24px",
-
-  },
-  BorderRadius: "0.6rem",
-};
-
-export const App = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  text-align: center;
-  align-items: center;
-`;
-
-export interface DefaultTheme {
-  body: string;
-  forground: string;
-  background:string ;
+if (darkMode)  return colorsDark ;
+return colorsLight ; 
 }
-/**
- * Contient le style globale de l'application
- */
-export const AppGlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
+export const colorList = setColor (true);
+export const AppGlobalStyle = createGlobalStyle`
   :root {
-    background-color: ${({ theme }) => theme.background};
+    background-color: "#123456";
     text-decoration: none;
-    color:${({ theme }) => theme.forground};
-  }
-  html, body, #root {
     margin: 0;
     padding: 0;
     display: flex;
@@ -88,12 +56,20 @@ export const AppGlobalStyle = createGlobalStyle<{ theme: DefaultTheme }>`
     align-items: center;
     min-width: 100vw;
     min-height: 100vh;
-    font-size: 24px;
-  }
-  * {
+   
     box-sizing: border-box;
+
+
+    font-size: 24px;
+
+    @media (min-width: ${MOBILE}px) { font-size:  18px; }
+
+    @media (min-width: ${DESKTOP}px1024px) {font-size:  16px; }
+  body {
+    margin: 0;
+    padding: 0;
+    
   }
-  .hide{
-    display: none;
-  }
+
 `;
+
