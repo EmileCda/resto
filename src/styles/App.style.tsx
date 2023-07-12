@@ -1,5 +1,5 @@
 
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, styled } from "styled-components";
 
 export const MOBILE  = 700;
 export const DESKTOP  = 1000;
@@ -53,14 +53,14 @@ export const fontList = {
 
 export const AppGlobalStyle = createGlobalStyle`
   :root {
-    background-color: "#123456";
+    background-color:${colorList.background};
     text-decoration: none;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     min-width: 100vw;
     min-height: 100vh;
     box-sizing: border-box;
@@ -74,6 +74,32 @@ export const AppGlobalStyle = createGlobalStyle`
     padding: 0;
     
   }
+}
 
 `;
+
+export const PageContainer = styled.div`
+  background-color: ${colorList.background};
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 0.6rem;
+  padding: 0.6rem;
+  color: ${colorList.forground};
+  padding: 0.2rem;
+  height: 75vh;
+  width: 97%;
+  position: absolute;
+  top: 80px; left: 0; bottom: 480px;
+  img{
+    width: 200px;
+    height: 100px;
+  }
+  border: solid 1px red;
+  overflow-y: scroll;
+  
+`;
+
+
 

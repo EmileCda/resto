@@ -39,8 +39,6 @@ console.log(navbar);
           <LeftContainer>
             <NavbarLinkContainer>
                <ul>
-               {/* {navbar.map((item) => <p>{item.en}</p>) */}
-                
                  {navbar.map((item: JsonLink, index: number) => ( 
                    <li key={index}>
                     <NavbarLink to={item.link}>{item.fr}</NavbarLink>
@@ -61,8 +59,7 @@ console.log(navbar);
         {extendNavbar && (
           <NavbarExtendedContainer>
              <ul>
-                
-                {navbar.map((item: JsonLink, index: number) => (
+                  {navbar.map((item: JsonLink, index: number) => (
                   <li key={index} onClick={() => setExtendNavbar((x) => !x)}>
                     <NavbarLink to={item.link}>{item.fr}</NavbarLink>
                   </li>

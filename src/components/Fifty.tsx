@@ -1,5 +1,6 @@
 import { Content, FiftyContainer, FiftyItemDiv, Title } from "../styles/Fifty.style";
-import { FiftyData } from "./Home";
+import { FiftyData } from "../types/global.type";
+
 
 
 export type FiftyItemProps = {

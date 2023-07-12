@@ -1,7 +1,11 @@
+import { FooterContainer } from "../styles/Footer.style";
+
 export default function Footer() {
 	return (
 		<>
-			<p>Footer</p>
+			<FooterContainer>		
+					<p>Footer</p>
+			</FooterContainer>
 		</>
 	);
 }

@@ -40,7 +40,7 @@ export const FiftyItemDiv = styled.div`
   align-items: center;
   @media (min-width: ${MOBILE}px) {   max-width: 40%;}
   img{
-    width: 90%;
+    /* width: 90%; */
     max-width: 400px;
     padding: 1rem;
   }

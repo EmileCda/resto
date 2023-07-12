@@ -1,26 +1,12 @@
 import jsonData from "../data/label.json";
+import { PageContainer } from "../styles/App.style";
+import { Title } from "../styles/Fifty.style";
+import { FiftyData } from "../types/global.type";
 import Fifty from "./Fifty";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const myLabel: any= jsonData;
-export enum Lang { FR= 'fr',EN='en',ES='es',LINK='link'}
 
-export const currentLang : Lang = Lang.FR;
-
-export type JsonItem = {
-	fr : string,
-	en : string,
-	es : string,
-	link : string,
-}
-
-
-export type FiftyData = {
-	img : JsonItem,
-	alt : JsonItem,
-	title : JsonItem,
-	text : JsonItem,
-	}
 
 export default function Home() {
 	console.log(jsonData);
@@ -50,9 +36,11 @@ console.log(imgList);
 
 	return (
 		<>
-		<h1>Home page</h1>
-			<p>{myLabel.home.title.fr}</p>
-			<Fifty  title={fiftyTitle} imgList ={imgList}></Fifty>
+			<PageContainer>
+				<Title>Home page</Title>
+				<Fifty  title={fiftyTitle} imgList ={imgList}></Fifty>
+			</PageContainer>
+
 		</>
 	);
 }

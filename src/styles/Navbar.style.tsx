@@ -7,9 +7,9 @@ export const NavbarLink = styled(Link)`
   font-family: ${fontList.extra};
   text-decoration: none;
   margin: 10px;
-  font-size: 2.2rem;
+  /* font-size: 2.2rem; */
   @media (min-width: 1000px) {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
   }
 `;
 export const NavbarContainer = styled.nav<{extendNavbar:boolean}>`
@@ -18,6 +18,8 @@ export const NavbarContainer = styled.nav<{extendNavbar:boolean}>`
   background-color:${colorList.lessBG};
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: 0; left: 0;
   @media (min-width: 1000px) {
     height: 80px;
   }
@@ -79,10 +81,16 @@ export const Logo = styled.img`
 `;
 
 export const NavbarExtendedContainer = styled.div`
+  background-color: ${colorList.lessBG};
+  opacity: 0.8;
+  min-height: 100vh;
+  
+
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 2rem;
+  z-index: 1;
   ul{
     list-style-type: none;
   }
