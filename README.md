@@ -1,7 +1,14 @@
 # resto   
 mar. 11 juil. 2023 14:41:38 CEST
 resto
-   
+# sujet 
+template pour les sites responsible mobile fist 
+1. fifty : 2 div 50%
+1. oneThird : 3 div 33%
+1. quarter : 4 div 25%
+1. menu burger
+
+
 ![Logo](./src/images/Logo-defaut.png)
 # Installation   
 1. Cloner le repository

@@ -44,6 +44,13 @@ if (darkMode)  return colorsDark ;
 return colorsLight ; 
 }
 export const colorList = setColor (true);
+
+export const fontList = {
+  regular: "Gloria Hallelujah, cursive",
+  extra: "Poppins, sans-serif",
+  Logo: "Lobster, cursive",
+}
+
 export const AppGlobalStyle = createGlobalStyle`
   :root {
     background-color: "#123456";
@@ -53,13 +60,10 @@ export const AppGlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-width: 100vw;
     min-height: 100vh;
-   
     box-sizing: border-box;
-
-
     font-size: 24px;
 
     @media (min-width: ${MOBILE}px) { font-size:  18px; }

@@ -1,20 +1,24 @@
 {
-"navBar" :{
-  "item1" : {
-     "fr": "texte fr",
-      "en": "texte en",
-      "es": "texte es",
-      "link": "texte link"
+  "navbar" :[{
+      "fr": "Accueil",
+      "en": "home",
+      "es": "initial",
+      "link": "/"
+    },
+    {
+      "fr": "A propos",
+      "en": "About",
+      "es": "Acerca de",
+      "link": "/About" 
     }, 
 
-    "item2" : {
-      "fr": "texte fr",
-       "en": "texte en",
-       "es": "texte es",
-       "link": "texte link"
-     } 
- 
-  },
+    {
+      "fr": "Contact",
+      "en": "contact",
+      "es": "contacto",
+      "link": "/contact"
+    } 
+    ],
   "fifty1" :{
     "img" : {
       "fr": "/src/images/resto-1.jpg",
