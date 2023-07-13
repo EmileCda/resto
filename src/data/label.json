@@ -1,11 +1,66 @@
 {
-  "navbar" :[{
+  "colors" :[
+    {
+      "name": "dark",
+      "fr": "#03045e",
+      "en": "#03045e",
+      "es": "#03045e",
+      "link": "#03045e"
+    },
+    {
+      "name": "lessDark",
+      "fr": "#0077b6",
+      "en": "#0077b6",
+      "es": "#0077b6",
+      "link": "#0077b6" 
+    }, 
+    {
+      "name": "medium",
+      "fr": "#00b4d8",
+      "en": "#00b4d8",
+      "es": "#00b4d8",
+      "link": "#00b4d8" 
+    }, 
+    {
+      "name": "lessLight",
+      "fr": "#90e0ef",
+      "en": "#90e0ef",
+      "es": "#90e0ef",
+      "link": "#90e0ef" 
+    }, 
+
+    {
+      "name": "light",
+      "fr": "#caf0f8",
+      "en": "#caf0f8",
+      "es": "#caf0f8",
+      "link": "#caf0f8" 
+    }, 
+    {
+      "name": "black",
+      "fr": "#0d3b66",
+      "en": "#0d3b66",
+      "es": "#0d3b66",
+      "link": "#0d3b66" 
+    }, 
+
+    {
+      "name": "white",
+      "fr": "#f8edeb",
+      "en": "#f8edeb",
+      "es": "#f8edeb",
+      "link": "#f8edeb"
+    } 
+  ], "navbar" :[
+    {
+      "name": "Home",
       "fr": "Accueil",
-      "en": "home",
-      "es": "initial",
+      "en": "Home",
+      "es": "Initial",
       "link": "/"
     },
     {
+      "name": "About",
       "fr": "A propos",
       "en": "About",
       "es": "Acerca de",
@@ -13,79 +68,138 @@
     }, 
 
     {
+      "name": "Contact",
       "fr": "Contact",
-      "en": "contact",
+      "en": "Contact",
       "es": "contacto",
       "link": "/contact"
     } 
+  ],
+    "fifty0" :[
+      {
+        "name": "Title",
+        "fr": "Titre fifty zéro",
+        "en": "[en]Titre fifty zéro",
+        "es": "[es]Titre fifty zéro",
+        "link": "[lk]Titre fifty zéro"
+      },
+      {
+        "name": "SubTitle",
+        "fr": "Titre fifty zéro",
+        "en": "[en]Titre fifty zéro",
+        "es": "[es]Titre fifty zéro",
+        "link": "[lk]Titre fifty zéro"
+      }
     ],
-  "fifty1" :{
-    "img" : {
-      "fr": "/src/images/resto-1.jpg",
-       "en": "/src/images/resto-1.jpg",
-       "es": "/src/images/resto-1.jpg",
-       "link": "/src/images/resto-1.jpg"
-     }, 
-     "alt" : {
-      "fr": "alt /src/images/resto-1.jpg",
-       "en": "alt /src/images/resto-1.jpg",
-       "es": "alt /src/images/resto-1.jpg",
-       "link": "alt /src/images/resto-1.jpg"
-     }, 
-     "title" : {
-      "fr": "titre resto 1 ",
-       "en": "title resto 1",
-       "es": "[es] titre resto 1",
-       "link": "[lk] resto 1 "
-     }, 
-     "text" : {
-      "fr": "Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous:  resto 1  ",
-       "en": "[en]Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous: ",
-       "es": "[en]Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous: ",
-       "link": "[lk] Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous: "
-     }
-  },
-  "fifty2" :{
-    "img" : {
-      "fr": "/src/images/resto-2.jpg",
-       "en": "/src/images/resto-2.jpg",
-       "es": "/src/images/resto-2.jpg",
-       "link": "/src/images/resto-2.jpg"
-     }, 
-     "alt" : {
-      "fr": "alt /src/images/resto-2.jpg",
-       "en": "alt /src/images/resto-2.jpg",
-       "es": "alt /src/images/resto-2.jpg",
-       "link": "alt /src/images/resto-2.jpg"
-     }, 
-     "title" : {
-      "fr": "titre resto 2 ",
-       "en": "title resto 2",
-       "es": "[es] titre resto 2",
-       "link": "[lk] resto 2 "
-     }, 
-     "text" : {
-      "fr": "Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous:  resto 1  ",
-       "en": "[en]Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous: ",
-       "es": "[en]Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous: ",
-       "link": "[lk] Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous: "
-     }
-  },
-  "home" :{
-    "title" : {
-       "fr": "titre",
-        "en": "texte en",
-        "es": "texte es",
-        "link": "texte link"
+    "fifty3" :[
+      {
+        "name": "img",
+        "fr": "/src/images/resto-1.jpg",
+        "en": "/src/images/resto-1.jpg",
+        "es": "/src/images/resto-1.jpg",
+        "link": "/src/images/resto-1.jpg"
       }, 
-  
-      "item2" : {
-        "fr": "texte fr",
-         "en": "texte en",
-         "es": "texte es",
-         "link": "texte link"
-       } 
-   
+        {
+      "name": "alt",
+      "fr": "alt /src/images/resto-1.jpg",
+      "en": "alt /src/images/resto-1.jpg",
+      "es": "alt /src/images/resto-1.jpg",
+      "link": "alt /src/images/resto-1.jpg"
+
+    }, 
+    {
+      "name": "title",
+      "fr": "titre resto 1 ",
+      "en": "title resto 1",
+      "es": "[es] titre resto 1",
+      "link": "[lk] resto 1 "
+    }, 
+    {
+      "name": "text",
+      "fr": "Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous:  resto 1  ",
+      "en": "[en]Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous: ",
+      "es": "[en]Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous: ",
+      "link": "[lk] Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous: "
     }
+    ],
+  
+    "fifty2" :[
+      {
+        "name": "img",
+        "fr": "/src/images/resto-2.jpg",
+        "en": "/src/images/resto-2.jpg",
+        "es": "/src/images/resto-2.jpg",
+        "link": "/src/images/resto-2.jpg"
+      }, 
+      {
+        "name": "alt",
+        "fr": "alt /src/images/resto-2.jpg",
+        "en": "alt /src/images/resto-2.jpg",
+        "es": "alt /src/images/resto-2.jpg",
+        "link": "alt /src/images/resto-2.jpg"
+  
+      }, 
+      {
+        "name": "title",
+        "fr": "titre resto 2 ",
+        "en": "title resto 2",
+        "es": "[es] titre resto 2",
+        "link": "[lk] resto 2 "
+      }, 
+      {
+        "name": "text",
+        "fr": "Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous:  resto 1  ",
+        "en": "[en]Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous: ",
+        "es": "[en]Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous: ",
+        "link": "[lk] Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous: "
+      }
+      ],
+      "fifty1" :[
+        {
+          "name": "img",
+          "fr": "/src/images/resto-1.jpg",
+          "en": "/src/images/resto-1.jpg",
+          "es": "/src/images/resto-1.jpg",
+          "link": "/src/images/resto-1.jpg"
+        }, 
+          {
+        "name": "alt",
+        "fr": "alt /src/images/resto-1.jpg",
+        "en": "alt /src/images/resto-1.jpg",
+        "es": "alt /src/images/resto-1.jpg",
+        "link": "alt /src/images/resto-1.jpg"
+  
+      }, 
+      {
+        "name": "title",
+        "fr": "titre resto 1",
+        "en": "titre resto 1",
+        "es": "[es] titre resto 1",
+        "link": "[lk] titre resto 1 "
+      }, 
+      {
+        "name": "text",
+        "fr": "Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous:  resto 1  ",
+        "en": "[en]Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous: ",
+        "es": "[en]Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous: ",
+        "link": "[lk] Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous: "
+      }
+      ],
+      "Home" :[
+        {
+          "name": "Title",
+          "fr": "page accueil",
+          "en": "Home page",
+          "es": "[en] Home page",
+          "link": "link to "
+        }, 
+        {
+          "name": "paragrapheIntro",
+          "fr": "Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous:  resto 1  ",
+          "en": "[en]Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous: ",
+          "es": "[en]Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous: ",
+          "link": "[lk] Le passage classique «Lorem ipsum dolor sit amet…» est attribué à un remixage du texte du philosophe romain Cicéron 45 de C. De Finibus Bonorum et Malorum («Sur les extrêmes du Bien et du Mal»). Plus précisément, on pense que le passage provient des sections 1.10.32 à 33 de son texte, dont la partie la plus notable est extraite ci-dessous: "
+        }
+        ]
 }
 

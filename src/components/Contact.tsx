@@ -1,6 +1,4 @@
-import { PageContainer } from "../styles/App.style";
-import { Title } from "../styles/Fifty.style";
-import { ContactContainer } from "../styles/contact.style";
+import { PageContainer, Title } from "../styles/App.style";
 
 export default function Contact() {
 	return (

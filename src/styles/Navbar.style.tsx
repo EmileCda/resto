@@ -1,27 +1,24 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { colorList, fontList } from "./App.style";
+import { MOBILE, colorList, fontList } from "./App.style";
 
 export const NavbarLink = styled(Link)`
   color: ${colorList.forground};
   font-family: ${fontList.extra};
   text-decoration: none;
   margin: 10px;
-  /* font-size: 2.2rem; */
-  @media (min-width: 1000px) {
-    /* font-size: 1.2rem; */
-  }
+ 
 `;
 export const NavbarContainer = styled.nav<{extendNavbar:boolean}>`
   width: 100vw;
-  height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
+  height: ${(props) => (props.extendNavbar ? "100vh" : "10vh")};
   background-color:${colorList.lessBG};
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 0; left: 0;
-  @media (min-width: 1000px) {
-    height: 80px;
+  @media (min-width: ${MOBILE}) {
+    height: 10vh;
   }
 `;
 
@@ -37,7 +34,7 @@ export const BurgerMenu = styled.button`
   color:${colorList.medium};
   font-size: 3rem;
   cursor: pointer;
-   @media (min-width: 1000px) {
+  @media (min-width: ${MOBILE}px) {
     display: none;
   }
 `;
@@ -48,10 +45,7 @@ export const NavbarLinkContainer = styled.div`
     display: flex;
     list-style-type: none;
   }
-
-
-
-  @media (min-width: 1000px) {
+  @media (min-width: ${MOBILE}px) {
     display: flex;
   }
 
@@ -84,8 +78,6 @@ export const NavbarExtendedContainer = styled.div`
   background-color: ${colorList.lessBG};
   opacity: 0.8;
   min-height: 100vh;
-  
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,7 +87,7 @@ export const NavbarExtendedContainer = styled.div`
     list-style-type: none;
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: ${MOBILE}px) {
     display: none;
   }
 `;

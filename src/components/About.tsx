@@ -1,5 +1,4 @@
-import { PageContainer } from "../styles/App.style";
-import { Title } from "../styles/Fifty.style";
+import { PageContainer, Title } from "../styles/App.style";
 
 export default function About() {
 	return (

@@ -1,60 +1,45 @@
-import { Content, FiftyContainer, FiftyItemDiv, Title } from "../styles/Fifty.style";
-import { FiftyData } from "../types/global.type";
 
 
+import { SectionBox } from "../types/global.type";
 
-export type FiftyItemProps = {
-	img : string,
-	alt : string,
-	title : string,
-	text : string,
-}
-
-
-
-export function FiftyItem (props :FiftyItemProps){
-  return (
-    <FiftyItemDiv >
-      <img src={props.img} alt={props.alt} />
-      <h1>{props.title}</h1>
-      <p>{props.text} </p>
-    </FiftyItemDiv>
-  )
-}
+// export function FiftyItem (props :ScreenBox){
+//   console.log (props.boxSize);
+//   return (
+//     <BoxItem boxSize={props.boxSize}>
+//       <img src={props?.img} alt={props?.alt} />
+//       <h1>{props.title}</h1>
+//       <p>{props.text} </p>
+//     </BoxItem>
+//   )
+// }
 
 
-export type FiftyProps = {
-  title: string,
-  imgList : FiftyData[],
-}
+export default function Fifty(props : SectionBox) {
 
-
-export default function Fifty(props : FiftyProps) {
-
-console.log(props)
+// const boxSize = 100/props.imgList.length;
+// console.log (boxSize);
 
   return (
     <>
 
-      <FiftyContainer>
+      {/* <SectionContainer>
         <Title> {props.title}  </Title>
 
         <Content>
+
+         {
+          props.imgList.map((enreg,index) => 
           <FiftyItem 
-            img={props.imgList[0].img.fr} 
-            alt={props.imgList[0].alt.fr} 
-            title={props.imgList[0].title.fr} 
-            text={props.imgList[0].text.fr} 
-          />
-          <FiftyItem 
-            img={props.imgList[1].img.fr} 
-            alt={props.imgList[1].alt.fr} 
-            title={props.imgList[1].title.fr} 
-            text={props.imgList[1].text.fr} 
-          />
-      
+            boxSize = {boxSize}
+            key ={index} 
+            img={enreg.img?.fr}
+            alt={enreg.alt?.fr}
+            title={enreg.title?.fr}
+            text={enreg.text?.fr} />
+          )}
+ 
         </Content>
-      </FiftyContainer>
+      </SectionContainer> */}
 
     </>
 
@@ -62,3 +47,4 @@ console.log(props)
   )
 
 }
+

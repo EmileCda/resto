@@ -1,11 +1,15 @@
 import jsonData from "../data/label.json";
-import { PageContainer } from "../styles/App.style";
-import { Title } from "../styles/Fifty.style";
-import { FiftyData } from "../types/global.type";
+import { jsonLabel } from "../lib/utils";
+import { PageContainer, Title } from "../styles/App.style";
+
+import {  PageLabel, ScreenBox } from "../types/global.type";
+import Content from "./Content";
 import Fifty from "./Fifty";
 
-// eslint-disable-next-line react-refresh/only-export-components
-export const myLabel: any= jsonData;
+
+
+
+export const myLabel:PageLabel= jsonData.navbar;
 
 
 export default function Home() {
@@ -13,32 +17,41 @@ export default function Home() {
 	console.log(myLabel);
 
 
+	const fiftyTitle = jsonLabel(jsonData.fifty0,'Title');
+	
 
-const fiftyTitle = "fiftyTitle";
-
-const fifty1 : FiftyData = {
-	img : myLabel.fifty1.img,
-	alt : myLabel.fifty1.alt,
-	title : myLabel.fifty1.title,
-	text : myLabel.fifty1.text,
-}
-const fifty2 : FiftyData = {
-	img : myLabel.fifty2.img,
-	alt : myLabel.fifty2.alt,
-	title : myLabel.fifty2.title,
-	text : myLabel.fifty2.text,
+const leftSide : ScreenBox = {
+	img : jsonLabel(jsonData.fifty1,'img'),
+	alt :  jsonLabel(jsonData.fifty1,'alt'),
+	title : jsonLabel(jsonData.fifty1, 'title'),
+	text :  jsonLabel(jsonData.fifty1,'text'),
 }
 
+const rightSide : ScreenBox = {
+	img : jsonLabel(jsonData.fifty2,'img'),
+	alt :  jsonLabel(jsonData.fifty2,'alt'),
+	title : jsonLabel(jsonData.fifty2, 'title'),
+	text :  jsonLabel(jsonData.fifty2,'text')
+}
+const rightSide2 : ScreenBox = {
+	
+	title : jsonLabel(jsonData.fifty2, 'title'),
+	text :  jsonLabel(jsonData.fifty2,'text')
+}
 
 
-const imgList =[fifty1,fifty2];
+
+const imgList =[leftSide,rightSide,rightSide,rightSide2,];
+const imgList2 =[leftSide,rightSide2,];
 console.log(imgList);
 
 	return (
 		<>
 			<PageContainer>
 				<Title>Home page</Title>
-				<Fifty  title={fiftyTitle} imgList ={imgList}></Fifty>
+				<Content  title={fiftyTitle?.fr} imgList ={imgList}></Content>
+				<Content  title={fiftyTitle?.fr} imgList ={imgList2}></Content>
+				
 			</PageContainer>
 
 		</>

@@ -14,14 +14,14 @@ export const FiftyContainer = styled.div`
  
 `;
 
-export const Title = styled.div`
+export const ZTitle = styled.div`
 
   color: ${colorList.forground};
   font-size: 1.5rem;
 
 `;
 
-export const Content = styled.div`
+export const ZContent = styled.div`
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -33,7 +33,7 @@ export const Content = styled.div`
 `;
 
 
-export const FiftyItemDiv = styled.div`
+export const ZFiftyItemDiv = styled.div<{width:number}>`
   max-width: 100%;
   display:flex;
   flex-direction: column;
@@ -41,6 +41,19 @@ export const FiftyItemDiv = styled.div`
   @media (min-width: ${MOBILE}px) {   max-width: 40%;}
   img{
     /* width: 90%; */
+    max-width: 400px;
+    padding: 1rem;
+  }
+`;
+
+
+export const ZBoxItem = styled.div<{$width:string;}>`
+  max-width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: ${MOBILE}px) {   max-width:$width%;}
+  img{
     max-width: 400px;
     padding: 1rem;
   }

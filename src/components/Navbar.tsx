@@ -31,7 +31,7 @@ export default function Navbar() {
   const [extendNavbar, setExtendNavbar] = useState(false);
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const navbar = jsonData.navbar;
-console.log(navbar);
+
   return (
     <>
       <NavbarContainer extendNavbar={extendNavbar}>
