@@ -3,6 +3,13 @@ mar. 11 juil. 2023 14:41:38 CEST
 resto
 # sujet 
 template pour les sites responsible mobile fist 
+
+a voir: slick carousel https://www.npmjs.com/package/slick-carousel
+
+react responsive : https://www.npmjs.com/package/react-responsive
+
+emotion : à la place de styled component
+
 1. fifty : 2 div 50%
 1. oneThird : 3 div 33%
 1. quarter : 4 div 25%

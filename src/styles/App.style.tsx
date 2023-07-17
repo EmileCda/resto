@@ -94,11 +94,9 @@ export const PageContainer = styled.div`
   width: 100%;
   position: absolute;
   top: 80px; left: 0; 
-  /* img{
-    width: 200px;
-    height: 100px;
-  } */
-  border: solid 1px red;
+  img{
+    max-width: 60vw;
+  }
   overflow-y: scroll;
   
 `;

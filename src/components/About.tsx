@@ -6,6 +6,7 @@ export default function About() {
 			<PageContainer>
 				<Title>About</Title>
 				<img src="src/images/aboutUs.jpg" alt="About us" />
+				
 			</PageContainer>
 			
 			
