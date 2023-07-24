@@ -68,6 +68,14 @@
     }, 
 
     {
+      "name": "Carousel",
+      "fr": "Carousel",
+      "en": "Carousel",
+      "es": "Carouselo",
+      "link": "/Carousel"
+    }, 
+
+    {
       "name": "Contact",
       "fr": "Contact",
       "en": "Contact",
