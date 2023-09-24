@@ -50,3 +50,4 @@ emotion : à la place de styled component
 1. `src/styles` : Dossier contenant le style de l'application (styled-components)
 1. `src/images` : Dossier contenant les images l'application
 1. `src/lib` : Dossier contenant tout le code externe à React
+# resto
